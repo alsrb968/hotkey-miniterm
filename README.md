@@ -32,13 +32,13 @@ python main.py -p COM3 -b 115200
 
 ### 설정된 핫키
 
-- `ctrl+alt+1`: adb mode
-- `ctrl+alt+2`: host mode
-- `ctrl+alt+3`: adb mode always
-- `ctrl+alt+4`: host mode always
-- `ctrl+alt+5`: master clear
-- `ctrl+alt+6`: start Settings
-- `ctrl+alt+7`: start All Apps
+- `ctrl+alt+f1`: adb mode
+- `ctrl+alt+f2`: host mode
+- `ctrl+alt+f3`: adb mode always
+- `ctrl+alt+f4`: host mode always
+- `ctrl+alt+f5`: master clear
+- `ctrl+alt+f6`: start Settings
+- `ctrl+alt+f7`: start All Apps
 
 ### 핫키 설정
 

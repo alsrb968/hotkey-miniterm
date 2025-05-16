@@ -1,19 +1,19 @@
 {
-    "ctrl+alt+1": {
+    "ctrl+alt+f1": {
         "description": "adb mode",
         "command": [
             "su",
             "setprop sys.usb.config adb"
         ]
     },
-    "ctrl+alt+2": {
+    "ctrl+alt+f2": {
         "description": "host mode",
         "command": [
             "su",
             "setprop sys.usb.config host"
         ]
     },
-    "ctrl+alt+3": {
+    "ctrl+alt+f3": {
         "description": "adb mode always",
         "command": [
             "su",
@@ -22,7 +22,7 @@
             "reboot"
         ]
     },
-    "ctrl+alt+4": {
+    "ctrl+alt+f4": {
         "description": "host mode always",
         "command": [
             "su",
@@ -31,15 +31,15 @@
             "reboot"
         ]
     },
-    "ctrl+alt+5": {
+    "ctrl+alt+f5": {
         "description": "master clear",
         "command": "am broadcast -a 'android.intent.action.MASTER_CLEAR'"
     },
-    "ctrl+alt+6": {
+    "ctrl+alt+f6": {
         "description": "start Settings",
         "command": "monkey --pct-syskeys 0 -p com.android.settings -c android.intent.category.LAUNCHER 1"
     },
-    "ctrl+alt+7": {
+    "ctrl+alt+f7": {
         "description": "start All Apps",
         "command": "monkey --pct-syskeys 0 -p com.android.allapps -c android.intent.category.LAUNCHER 1"
     }

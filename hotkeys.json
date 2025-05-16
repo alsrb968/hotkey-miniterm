@@ -1,0 +1,46 @@
+{
+    "ctrl+alt+1": {
+        "description": "adb mode",
+        "command": [
+            "su",
+            "setprop sys.usb.config adb"
+        ]
+    },
+    "ctrl+alt+2": {
+        "description": "host mode",
+        "command": [
+            "su",
+            "setprop sys.usb.config host"
+        ]
+    },
+    "ctrl+alt+3": {
+        "description": "adb mode always",
+        "command": [
+            "su",
+            "mount -o rw,remount /vendor",
+            "sed -i 's/setprop sys.usb.config host/setprop sys.usb.config adb/g' /vendor/etc/init/init.tcc803x.usb.rc",
+            "reboot"
+        ]
+    },
+    "ctrl+alt+4": {
+        "description": "host mode always",
+        "command": [
+            "su",
+            "mount -o rw,remount /vendor",
+            "sed -i 's/setprop sys.usb.config adb/setprop sys.usb.config host/g' /vendor/etc/init/init.tcc803x.usb.rc",
+            "reboot"
+        ]
+    },
+    "ctrl+alt+5": {
+        "description": "master clear",
+        "command": "am broadcast -a 'android.intent.action.MASTER_CLEAR'"
+    },
+    "ctrl+alt+6": {
+        "description": "start Settings",
+        "command": "monkey --pct-syskeys 0 -p com.android.settings -c android.intent.category.LAUNCHER 1"
+    },
+    "ctrl+alt+7": {
+        "description": "start All Apps",
+        "command": "monkey --pct-syskeys 0 -p com.android.allapps -c android.intent.category.LAUNCHER 1"
+    }
+} 
